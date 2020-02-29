@@ -19,8 +19,22 @@ window.addEventListener("load", () => {
             // By setting .currentTime to 0, we can enable other sounds to play over eachother
             sounds[index].currentTime = 0;
             sounds[index].play();
+
+            createBubbles(index);
         })
-    })
+    });
+
+
+    // Create a function that makes beat-bubbles
+    const createBubbles = index => {
+        const bubble = document.createElement("div");
+        visual.appendChild(bubble);
+        bubble.style.backgroundColor = colors[index];
+        bubble.style.animation = 'jump 1s ease';
+        bubble.addEventListener('animationEnd', function () {
+            visual.removeChild(this);
+        })
+    }
 });
 
 
