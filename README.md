@@ -6,4 +6,4 @@ An interactive Beat Maker built using Vanilla-JS and CSS Animation
 - Each sound can be played over eachother 
 - Animated bubbles appear associated with the sound clicked 
 
-![Alt text](/Screenshot.png?raw=true "Optional Title")
+![Screenshot of UI](/Screenshot.png?raw=true "UI Screenshot")
